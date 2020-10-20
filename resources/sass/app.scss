@@ -1,0 +1,10 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Variables
+@import 'partials/_variables';
+
+// General partials
+@import 'partials/_common';
+@import 'partials/_header';
+@import 'partials/_main';
+@import 'partials/_footer';
