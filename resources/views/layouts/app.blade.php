@@ -6,11 +6,7 @@
   {{-- Include Head --}}
   @include("partials.head")
 
-  <body class="bg-white">
-    <div class="main_wrapper">
-
-      {{-- Header --}}
-      @include("partials.header")
+  <body>
 
       {{-- Main --}}
       <main>
@@ -18,8 +14,5 @@
       </main>
       {{-- end Main --}}
 
-      {{-- Footer --}}
-      @include("partials.footer")
-    </div>
   </body>
 </html>

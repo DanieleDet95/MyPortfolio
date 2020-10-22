@@ -37282,6 +37282,15 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
+$(document).ready(function () {
+  $('.explore').click(function () {
+    $('.home').fadeOut(250);
+    setTimeout(function () {
+      $('.portfolio').fadeIn("slow");
+    }, 250);
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -37334,8 +37343,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\pc\Desktop\boolean\portfolio\MyProject\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\pc\Desktop\boolean\portfolio\MyProject\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\pc\Desktop\boolean\MyPortfolio\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\pc\Desktop\boolean\MyPortfolio\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

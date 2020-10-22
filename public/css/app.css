@@ -10903,12 +10903,415 @@ a.text-dark:focus {
   }
 }
 
-main {
-  background: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-footer {
-  background: black;
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  background: #191923;
+}
+
+body .wrapper {
+  display: flex;
+  margin: 15px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+body .wrapper .block-info {
+  width: 290px;
+  min-width: 290px;
+  height: calc(100vh - 30px);
+  width: 25%;
+  background: #20202a;
+  position: relative;
+  z-index: 99999;
+}
+
+body .wrapper .block-info .top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px;
+  padding-bottom: 0px;
+  z-index: 9999;
+  background: #20202a;
+}
+
+body .wrapper .block-info .top .info-avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+body .wrapper .block-info .top .info-avatar img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+body .wrapper .block-info .top .info-name {
+  text-align: center;
+  color: #ffc107;
+}
+
+body .wrapper .block-info .top .info-name h5 {
+  font-weight: 600;
+}
+
+body .wrapper .block-info .top .info-text {
+  text-align: center;
+  color: lightgray;
+  margin-bottom: 30px;
+}
+
+body .wrapper .block-info .top .info-text h5 {
+  font-weight: 200;
+}
+
+body .wrapper .block-info .middle {
+  padding: 260px 25px 50px;
+  width: 100%;
+  height: calc(98vh - 70px);
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+body .wrapper .block-info .middle::-webkit-scrollbar {
+  display: none;
+}
+
+body .wrapper .block-info .middle .info-infos {
+  font-size: 15px;
   color: white;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+body .wrapper .block-info .middle .info-infos p {
+  margin-bottom: 0;
+}
+
+body .wrapper .block-info .middle .info-infos span {
+  color: lightgray;
+}
+
+body .wrapper .block-info .middle .info-infos hr {
+  background: white;
+}
+
+body .wrapper .block-info .middle .info-infos h4 {
+  color: #ffc107;
+}
+
+body .wrapper .block-info .middle .info-infos .info-skills {
+  width: 100%;
+}
+
+body .wrapper .block-info .middle .info-infos .info-skills span.right {
+  float: right;
+}
+
+body .wrapper .block-info .middle .info-infos .info-skills .barra {
+  display: block;
+  width: 100%;
+  height: 5px;
+  margin: 10px 0;
+  background: white;
+}
+
+body .wrapper .block-info .middle .info-infos .info-skills .barra .html-bar {
+  position: relative;
+  width: 90%;
+  height: 5px;
+  background: #ffc107;
+}
+
+body .wrapper .block-info .middle .info-infos .info-skills .barra .css-bar {
+  position: relative;
+  width: 80%;
+  height: 5px;
+  background: #ffc107;
+}
+
+body .wrapper .block-info .middle .info-infos .info-skills .barra .js-bar {
+  position: relative;
+  width: 85%;
+  height: 5px;
+  background: #ffc107;
+}
+
+body .wrapper .block-info .middle .info-infos .info-skills .barra .php-bar {
+  position: relative;
+  width: 85%;
+  height: 5px;
+  background: #ffc107;
+}
+
+body .wrapper .block-info .middle .info-infos .info-skills .barra .wp-bar {
+  position: relative;
+  width: 75%;
+  height: 5px;
+  background: #ffc107;
+}
+
+body .wrapper .block-info .middle .competences .block {
+  margin: 10px;
+}
+
+body .wrapper .block-info .middle .competences .block img:hover {
+  transform: scale(2);
+}
+
+body .wrapper .block-info .info-social {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  background: #20202a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 35px;
+  height: 50px;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+body .wrapper .block-info .info-social a {
+  color: white;
+}
+
+body .wrapper .block-info .info-social a i {
+  font-size: 30px;
+}
+
+body .wrapper .block-info .info-social a:hover {
+  color: #ffc107;
+}
+
+body .wrapper .home {
+  background: #23232e;
+  overflow: auto;
+  scrollbar-width: none;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 30px);
+  transition: 0.55s ease-in-out;
+}
+
+body .wrapper .home::-webkit-scrollbar {
+  display: none;
+}
+
+body .wrapper .home .p-30 {
+  padding-top: 30px;
+}
+
+body .wrapper .home .col-top {
+  transform: scale(1);
+  opacity: 1;
+}
+
+body .wrapper .home .col-top .sfondo {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  z-index: 99;
+  margin-bottom: 30px;
+}
+
+body .wrapper .home .col-top .sfondo .banner {
+  position: relative;
+  display: flex;
+  padding: 60px;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%);
+}
+
+body .wrapper .home .col-top .sfondo .banner .banner-text {
+  color: white;
+}
+
+body .wrapper .home .col-top .sfondo .banner .banner-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+body .wrapper .home .col-top .sfondo .banner .banner-text i {
+  color: #ffc107;
+}
+
+body .wrapper .home .col-top .sfondo .banner .banner-text .button {
+  font-size: 14px;
+  padding: 15px 35px;
+  background: #ffc107;
+  margin: 20px 0;
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  color: #20202a;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  transition: 0.4s ease-in-out;
+}
+
+body .wrapper .home .col-top .sfondo .banner .banner-text .button:hover {
+  transform: translateY(-2px);
+}
+
+body .wrapper .home .about_me h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #ffc107;
+  margin-bottom: 20px;
+}
+
+body .wrapper .home .about_me .block {
+  font-size: 19px;
+  text-align: center;
+  padding: 30px;
+  background: #20202a;
+  color: white;
+}
+
+body .wrapper .home .myservices {
+  margin-bottom: 20px;
+}
+
+body .wrapper .home .myservices h4 {
+  text-align: center;
+  font-weight: bold;
+  color: #ffc107;
+  margin: 20px 0;
+}
+
+body .wrapper .home .myservices .block {
+  text-align: center;
+  padding: 15px;
+}
+
+body .wrapper .home .myservices .block .contenitore {
+  font-size: 17px;
+  padding: 30px;
+  background: #20202a;
+}
+
+body .wrapper .home .myservices .block .contenitore h5 {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+body .wrapper .home .myservices .block:hover h5 {
+  color: #ffc107;
+}
+
+body .wrapper .home .myservices .block:hover p {
+  color: white;
+}
+
+body .wrapper .portfolio {
+  background: #23232e;
+  overflow: auto;
+  scrollbar-width: none;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 30px);
+  transition: 0.55s ease-in-out;
+}
+
+body .wrapper .portfolio::-webkit-scrollbar {
+  display: none;
+}
+
+body .wrapper .portfolio .p-30 {
+  padding-top: 30px;
+}
+
+body .wrapper .portfolio h1 {
+  color: #ffc107;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+body .wrapper .portfolio .card {
+  border-radius: 30px;
+  background-color: #20202a;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+body .wrapper .portfolio .card .immagine {
+  margin-bottom: 30px;
+}
+
+body .wrapper .portfolio .card .immagine img {
+  border-radius: 15px;
+}
+
+body .wrapper .portfolio .card h3 {
+  color: white;
+  font-size: 31px;
+}
+
+body .wrapper .portfolio .card p {
+  color: lightgray;
+  font-size: 18px;
+}
+
+body .wrapper .portfolio .card:hover h3 {
+  color: #ffc107;
+}
+
+body .wrapper .portfolio .card:hover p {
+  color: white;
+}
+
+body .wrapper footer {
+  width: 100%;
+  padding: 17px 30px 7px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #20202a;
+  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  font-size: 12px;
+  transition: 0.55s ease-in-out;
+  color: white;
+}
+
+body .wrapper footer a {
+  color: white;
+}
+
+body .wrapper footer a:hover {
+  color: #ffc107;
+  text-decoration: none;
 }
 

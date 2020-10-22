@@ -6,17 +6,19 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
+    {{-- Font Awesome Icons --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="{{asset("css/app.css")}}">
     <script type="text/javascript" src="{{asset("js/app.js")}}"defer></script>
 
     <!-- Styles -->
     <style>
         html, body {
-            background-color: #fff;
             color: #636b6f;
             font-family: 'Nunito', sans-serif;
             font-weight: 200;
-            height: 100vh;
             margin: 0;
         }
 
@@ -42,10 +44,6 @@
 
         .content {
             text-align: center;
-        }
-
-        .title {
-            font-size: 84px;
         }
 
         .links > a {
